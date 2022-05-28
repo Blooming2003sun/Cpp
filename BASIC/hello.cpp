@@ -3,7 +3,6 @@
 using std::cout;
 int main(void)
 {
-    int a=67;
-    std::cout<<"\trudra\t";
+    std::cout<<"hello\n";
     return 0;
 }
