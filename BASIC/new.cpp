@@ -4,7 +4,8 @@
 using namespace std;
 int main(void)
 {
-	float a=12.34567890123f;
-	cout<<a;
-	return 0;
+    int n;
+    cin>>n;
+    cout<<n<<" out"<<endl;
+    return 0;
 }
