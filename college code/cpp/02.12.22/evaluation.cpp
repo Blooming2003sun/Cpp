@@ -43,7 +43,15 @@ int num(char x){
 int evaluate(){
     int i=0,a,b,result;
     while(arr[i]!='\0'){
-        if(isOparand(arr[i]))
+        if(arr[i]==' '){
+            //ignore
+        }
+        else if(isOparand(arr[i])&&isOparand(arr[i+1]))
+        {
+            oparand.push(num(arr[i])*10 + num(arr[i+1]));
+            i=i+1;
+        }
+        else if(isOparand(arr[i]))
             oparand.push(num(arr[i]));
         else{
             a=oparand.peek();

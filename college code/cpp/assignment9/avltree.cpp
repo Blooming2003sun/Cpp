@@ -174,7 +174,7 @@ int main()
 	n1.insert(headroot, 20);
 	n1.insert(headroot, 30);
 	n1.insert(headroot, 15);
-	n1.insert(headroot, 40);
+	//n1.insert(headroot, 40);
 
 
 	n1.pre_order(headroot);

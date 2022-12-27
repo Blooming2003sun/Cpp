@@ -14,15 +14,15 @@ void merge(int arr[], int low, int mid, int high);
 int getmax(int arr[], int n);
 void quicksort(int arr[], int low, int high);
 int partition(int arr[], int low, int high);
-void makeheap(int arr[], int i, int n);
+void makeheap(int arr[], int n);
 /*2nd one*/void makeheap2(int arr[], int i, int n);
 void heapsort(int arr[], int n);
 void adjustheap(int arr[], int i, int n);
 
 int main(void)
 {
-    int n = 18;
-    int arr[n] = {5, 2, 1, 4, 2, 3, 8, 7, 6, 4, 5, 2, 1, 3, 4, 8, 0, 1};
+    int n = 7;
+    int arr[n] = {20,16,12,03,80,35,39};
     quicksort(arr, 0, n - 1);
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";

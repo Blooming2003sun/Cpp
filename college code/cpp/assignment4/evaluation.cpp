@@ -1,9 +1,9 @@
 #include<iostream>
 #include<stdio.h>
-#include"charstack.cpp"
+#include"intstack.cpp"
 using namespace std;
 char arr[50];
-charstack oparand;
+intstack oparand;
 int isOparand(char ch)
 {
 	return (ch <= 57 && ch >= 48) || (ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122);
@@ -59,8 +59,8 @@ int evaluate(){
 }
 int main(void)
 {
-	cout << "enter infix expression : ";
-	scanf("%s", &arr);
+	cout << "enter postfix expression : ";
+	gets(arr);
 	cout<<"result is : "<<evaluate();
 	return 0;
 }

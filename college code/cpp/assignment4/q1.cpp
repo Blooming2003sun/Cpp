@@ -74,7 +74,7 @@ void infixToPost()
 int main(void)
 {
 	cout << "enter infix expression : ";
-	scanf("%s", &arr);
+	gets(arr);
 	infixToPost();
 	return 0;
 }
